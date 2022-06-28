@@ -22,4 +22,4 @@ ran = random.sample(all,length)
 
 password = "".join(ran)
 
-print("Password",password)
+print("Password :",password)
