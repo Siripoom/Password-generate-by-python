@@ -4,22 +4,27 @@ import random
 import string
 from unittest import result
 
-print("Would you link to generate password?")
+
 #input length of password
-length = int(input("\n Enter your length password :"))
-#or define length
-length = 16
-#define data
-upper = string.ascii_uppercase
-lower = string.ascii_lowercase
-number = string.digits
-symbols = string.punctuation
+def gen(length):
+    
+    #or define length
+    #length = 16
+    #define data
+    upper = string.ascii_uppercase
+    lower = string.ascii_lowercase
+    number = string.digits
+    symbols = string.punctuation
 
-#combine
-all = upper + lower + number + symbols
+    #combine
+    all = upper + lower + number + symbols
 
-ran = random.sample(all,length)
+    ran = random.sample(all,length)
 
-password = "".join(ran)
+    password = "".join(ran)
 
-print("Password:",password)
+    print("Password:",password)
+
+"""a = int(input())
+a = gen(a)
+print( a )"""
