@@ -9,7 +9,8 @@ import main
 def show_output():
     lenght = int(text_input.get())
     output = main.gen(lenght)
-    
+
+window = tk.Tk()    
 window.title('Password Generator')
 window.minsize(width=500, height=500)
 
